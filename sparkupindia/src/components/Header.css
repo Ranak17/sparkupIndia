@@ -1,0 +1,64 @@
+.nav-item {
+    position: relative;
+}
+
+/* Styles for the dropdown container */
+.dropdown-container {
+    position: absolute;
+    top: 100%;
+    /* Places the dropdown below the navigation item */
+    left: 0;
+    width: auto;
+    /* Allows dropdown to fit content */
+    background-color: #fff;
+    /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+    /* min-width: 800px; */
+    /* Ensures dropdown is wide enough for content */
+    color: #333;
+    /* Default text color */
+}
+
+/* Styles for the content inside the dropdown panel */
+.dropdown-panel {
+    display: flex;
+    gap: 20px;
+}
+
+/* Each section within the dropdown (like 'App Development') */
+.dropdown-panel div {
+    flex: 1;
+    min-width: 150px;
+    /* Ensures columns have consistent width */
+}
+
+/* Section heading */
+.dropdown-panel h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    /* Dark color for section headings */
+}
+
+/* Unordered list styles */
+.dropdown-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-panel ul li {
+    padding: 5px 0;
+    color: #555;
+    /* Slightly lighter color for items */
+}
+
+.dropdown-panel ul li:hover {
+    color: #007bff;
+    /* Highlight color on hover */
+    cursor: pointer;
+}
